@@ -94,10 +94,60 @@ class SquareTestCase(unittest.TestCase):
     def test_area(self):
         tests = [(0, 0), (1, 1), (2, 4), (10**10, 10**20)]
         for test in tests:
-            self.assertEqual(square.area(test[0]), test[1], "Area don't work")
-        self.assertEqual(format(square.area(0.1), ".2f"), "0.01", "Area don't work")
+            self.assertEqual(square.area(test[0]), test[1], "Area don't work!")
+        self.assertEqual(format(square.area(0.1), ".2f"), "0.01", "Area don't work!")
 
     def test_perimeter(self):
         tests = [(0, 0), (1, 4), (2, 8), (0.1, 0.4), (10**10, 4*10**10)]
         for test in tests:
-            self.assertEqual(square.perimeter(test[0]), test[1], "Perimeter don't work")
+            self.assertEqual(square.perimeter(test[0]), test[1], "Perimeter don't work!")
+    
+class TriangleTestCase(unittest.TestCase):
+    def test_perimeter_commutativity(self):
+        test0 = gen_commutative_tuples([0, 0, 0])
+        test1 = gen_commutative_tuples([1, 2, 3])
+        test2 = gen_commutative_tuples([0.1, 0.01, 0.001])
+        test3 = gen_commutative_tuples([1, 1, 1])
+        test4 = gen_commutative_tuples([10**10, 2**80, 10**100])
+        test5 = gen_commutative_tuples([1, 10**100, 0.001])
+        tests = [test0, test1, test2, test3, test4, test5]
+
+        for test in tests:
+            for a, b in iter.permutations(test, r=2):
+                self.assertEqual(
+                    triangle.perimeter(*a),
+                    triangle.perimeter(*b),
+                    "Perimeter not commutative!"
+                )
+
+    def test_perimeter(self):
+        tests = [(0, 0, 0, 0),
+                 (1, 2, 3, 6),
+                 (10**10, 10**9, 10**11, 111000000000),
+                 (1, 10**10, 0.001, 10000000001.001)]
+        
+        for test in tests:
+            args = test[0:3]
+            self.assertEqual(
+                triangle.perimeter(*args),
+                test[3],
+                "Perimeter don't work!"
+            )
+        self.assertEqual(
+            format(triangle.perimeter(0.1, 0.2, 0.01), ".2f"),
+            "0.31",
+            "Perimeter don't work!"
+        )
+
+    def test_area(self):
+        tests = [(0, 0, 0),
+                 (1, 2, 1),
+                 (1, 3, 1.5),
+                 (10**10, 2**5, 10**10*2**4)]
+        for test in tests:
+            args = test[0:2]
+            self.assertEqual(
+                triangle.area(*args),
+                test[2],
+                "Area don't work!"
+            )
