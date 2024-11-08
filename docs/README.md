@@ -289,3 +289,29 @@ print(area, perimeter)
 - **Author**: Gleb Simakov \<ethernet389@gmail.com\>
 - **Updated files**:
   - test.py
+
+### docs(docs/*): Create tests.md and update README.md
+- **Hash**: b1120f9
+- **Branch**: new_features_467462
+- **Time**: 19:45:54 +0300
+- **Author**: Gleb Simakov \<ethernet389@gmail.com\>
+- **Updated files**:
+  - docs/README.md
+- **Created files**:
+  - docs/tests.md
+
+### docs(docs/tests.md): Add level of testing
+- **Hash**: fe6138f
+- **Branch**: new_features_467462
+- **Time**: 17:20:42 +0300
+- **Author**: Gleb Simakov \<ethernet389@gmail.com\>
+- **Updated files**:
+  - docs/tests.md
+
+### docs+fix(docs/tests.md): Replace H2 with H3
+- **Hash**: 9a1d72c
+- **Branch**: new_features_467462
+- **Time**: 19:54:29 +0300
+- **Author**: Gleb Simakov \<ethernet389@gmail.com\>
+- **Updated files**:
+  - docs/tests.md
