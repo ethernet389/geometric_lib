@@ -94,6 +94,8 @@ print(area, perimeter)
 
 <br/><br/>
 
+# [Testing](tests.md)
+
 # Commit History
 
 ## 04.03.2021
@@ -242,3 +244,48 @@ print(area, perimeter)
 - **Author**: Gleb Simakov \<ethernet389@gmail.com\>
 - **Updated files**:
   - docs/README.md
+
+
+## 04.10.2024
+
+### refactor(): Add .gitignore
+- **Hash**: 48d5eed
+- **Branch**: new_features_467462
+- **Time**: 21:46:00 +0300
+- **Author**: Gleb Simakov \<ethernet389@gmail.com\>
+- **Created files**:
+  - .gitignore
+
+### refactor(): Add test.py and add rectangle commutativity test
+- **Hash**: f816da6
+- **Branch**: new_features_467462
+- **Time**: 21:46:42 +0300
+- **Author**: Gleb Simakov \<ethernet389@gmail.com\>
+- **Created files**:
+  - test.py
+  
+### refactor(test.py): Add same values test for rectangle
+- **Hash**: 96d789d
+- **Branch**: new_features_467462
+- **Time**: 22:12:01 +0300
+- **Author**: Gleb Simakov \<ethernet389@gmail.com\>
+- **Updated files**:
+  - test.py
+
+## 08.10.2024
+
+### refactor(test.py): refactor(test.py): Add tests to circle and square
+- **Hash**: c92e364
+- **Branch**: new_features_467462
+- **Time**: 16:15:17 +0300
+- **Author**: Gleb Simakov \<ethernet389@gmail.com\>
+- **Updated files**:
+  - test.py
+
+### refactor(test.py): Add tests to triangle
+- **Hash**: 401ba5c
+- **Branch**: new_features_467462
+- **Time**: 17:20:42 +0300
+- **Author**: Gleb Simakov \<ethernet389@gmail.com\>
+- **Updated files**:
+  - test.py
