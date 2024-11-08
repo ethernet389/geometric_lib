@@ -23,7 +23,7 @@
 - Прямоугольник (_rectangle.py_)
 - Треугольник (_triangle.py_)
 
-## Функционал
+### Функционал
 |        File        |    Function Signature    |                             Parameters (type)                              |  Return value (type)  |                      Description                       |
 | :----------------: | :----------------------: | :------------------------------------------------------------------------: | :-------------------: | :----------------------------------------------------: |
 |  **_circle.py_**   |      `def area(r)`       |                          `r` - radius (**number**)                          |   area (**number**)    |         _Take_ radius. <br/> _Calculate_ area.         |
