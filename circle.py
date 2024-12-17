@@ -11,7 +11,7 @@ def area(r):
         Return value:
             area (float): Area of circle.
     '''
-    return math.pi * r * r
+    return math.pi * r * r / 2
 
 
 def perimeter(r):
